@@ -1,0 +1,154 @@
+<!docktype html>
+<html>
+<head>
+<title>port></title>
+<style>
+body{
+font-family:arial,sans-serif;
+margin:0;
+padding:0;
+background-color:violet;
+}
+header{
+background-color:black;
+color:red;
+text-align:center;
+padding:2rem 0;
+position:relative;/*add this*/
+}
+.header-content h1{
+font-size:2.5rem;
+/*add styles for the round profile picture*/
+
+
+.profile-picture{
+width:100px;/*adjust the size as needed*/
+height:100px;
+border-radius:75%;/*create a circular shape*/
+object-fit:cover;
+position:absolute;
+top:100px;
+left:75px;
+}
+nav{
+background-color:blue;
+color:white;
+text-align:center;
+}
+nav ul{
+list-style-type:none;
+padding:0;
+}
+nav ul li{
+display:inline;
+margin:0 20px;
+}
+nav ul li a{
+text-decoration:none;
+color:white;
+}
+.section-content{
+background-color:white;
+padding:2rem;
+margin:1rem;
+border-radious:20px;
+box-shadow:0 0 10px black(0,0,0,0.1);
+}
+.download-button:hover{
+background-color:blue;
+}
+footer{
+text-align:center;
+padding:1rem 0;
+background-color:black;
+color:white;
+}
+ul{
+list-style-type:star;
+padding-left:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<!--add your profile picture here-->
+<img src="C:\Users\ELCOT\Pictures/s1.jpg"  height="200" width="200"  alt="your profile picture"  class="profile-picture">
+<h1>A.Sowmiya</h1>
+<p>I'am Web Devoloper</p>
+<p>
+</div>
+</header>
+
+<div class="topnav" id="mytopnav"><center>
+<button><a href="#about"><h3>about</h3></a></button>
+<button><a href="#education"><h3>education</h3></a></button>
+<button><a href="#skill"><h3>skill</h3></a></button>
+<button><a href="#project"><h3>project</h3></a></button></center>
+
+</div>
+
+<section id="about">
+<div class="section-content">
+
+<h2><u><i>ABOUT ME</i></u></h2>
+<p>I AM <B>SOWMIYA</B></p>
+<P>hello everyone!!This is my Portfolio.</br>
+<br>I'am final year computer science student.</br>
+<br>And I was studying from government arts college for women sivagangai.</br>
+</div>
+</section>
+<section id="education">
+<div class="section-content">
+<h2><u><i>EDUCATION</u></i></h2>
+<p>BSC Computer Science</p>
+</div>
+</section>
+<section id="skill">
+<div class="section-content">
+<h2><i><u>SKILLS</i></u></h2>
+<ul>
+<li>Phython</li>
+<li>Oracle and Sql</li>
+<li>Java</li>
+<li>Html</li>
+</ul>
+</div>
+</section>
+<section id="project">
+<div class="section-content">
+<h2><u><i>PROJECTS</u></i></h>
+<p><h3>NATIONAL SYMBOLS OF INDIA</p></h3>
+<p><h1><button><a href="new1.html"><h3><b>My project</h3></b></a></button></h1></p>
+
+
+</ul>
+</div>
+</section>
+<footer>
+
+</footer>
+<script>
+document.queryselectorall('a[href^="#"]').foreach(anchor=>{
+anchor.addeventlistener('click',function(e){
+e.preventdefault();
+
+
+const targetid=this.getattribute('href').substring(1);
+const targetelement=document=document.getelementbyid(targetid);
+
+if(targetelement){
+window.scrollto({
+top:targetelement.offsettop,
+behavior:'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
+
+
+
+
